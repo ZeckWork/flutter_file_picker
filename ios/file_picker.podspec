@@ -22,7 +22,7 @@ A flutter plugin to show native file picker dialogs.
   preprocess_definitions=[]
   if !Pod.const_defined?(:PICKER_MEDIA) || PICKER_MEDIA
     preprocess_definitions << "PICKER_MEDIA=1"
-    s.dependency 'DKImagePickerController/PhotoGallery'
+    s.dependency 'DKImagePickerController/PhotoGallery', :git => 'https://github.com/ZeckWork/flutter_file_picker/', :branch => 'change-ref-DKImagePickerController'
   end
   if !Pod.const_defined?(:PICKER_AUDIO) || PICKER_AUDIO
     preprocess_definitions << "PICKER_AUDIO=1"
